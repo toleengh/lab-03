@@ -21,6 +21,7 @@ public class Car {
     }
 
     private List<Recall> fetchRecalls() {
+        System.out.println("********************************");
         System.out.println("Fetching recalls from NHTSA...");
         List<Recall> recallList = null;
         // build the URL

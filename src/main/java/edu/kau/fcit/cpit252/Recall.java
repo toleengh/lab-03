@@ -28,6 +28,15 @@ public class Recall {
     @JsonProperty("Notes")
     private String notes;
 
+    public Date getReportReceivedDate(){
+        return this.reportReceivedDate;
+    }
+
+    public String getComponent(){
+        return this.component;
+    }
+
+
     @Override
     public String toString() {
         return "Recall Details:\n\t" +
