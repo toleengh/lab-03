@@ -8,9 +8,7 @@ import java.util.Date;
 public class Recall {
     @JsonProperty("Manufacturer")
     private String manufacturer;
-    @JsonProperty("ParkIt")
     private boolean parkIt;
-    @JsonProperty("ParkOutSide")
     private boolean parkOutSide;
     @JsonProperty("NHTSAActionNumber")
     private String nhtsaActionNumber;
