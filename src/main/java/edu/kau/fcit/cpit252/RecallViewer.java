@@ -10,7 +10,7 @@ public class RecallViewer {
     }
 
     public void printTableView(){
-        if (car.recalls.size() < 0){
+        if (car.getRecalls().size() < 0){
             return;
         }
         String lineSeparator = "+--------------+---------+-------+-------------+--------------------------------------------------------------------";
@@ -18,7 +18,7 @@ public class RecallViewer {
         System.out.println("| Manufacturer | Model   | Year  |    Date     |                          Component                                 ");
         System.out.println(lineSeparator);
         SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
-        for(Recall recall: car.recalls){
+        for(Recall recall: car.getRecalls()){
             String reportedDate = formatter.format(recall.getReportReceivedDate());
             System.out.println(car.getMake()  + generateWhiteSpaces(9) + " | " +
                     car.getModel() + generateWhiteSpaces(1) +  " | " +

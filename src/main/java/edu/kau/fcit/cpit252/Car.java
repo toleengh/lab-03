@@ -8,10 +8,10 @@ import java.net.http.HttpResponse;
 import java.util.List;
 
 public class Car {
-    String make;
-    String model;
-    int year;
-    List<Recall> recalls;
+    private String make;
+    private String model;
+    private int year;
+    private List<Recall> recalls;
 
     public Car(String make, String model, int year) {
         this.make = make;
@@ -64,6 +64,10 @@ public class Car {
 
     public void setYear(int year) {
         this.year = year;
+    }
+
+    public List<Recall> getRecalls() {
+        return this.recalls;
     }
 
     public String toString() {
