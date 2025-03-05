@@ -2,13 +2,14 @@ package edu.kau.fcit.cpit252;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
-
 import java.util.Date;
 
 public class Recall {
     @JsonProperty("Manufacturer")
     private String manufacturer;
+    @JsonProperty("ParkIt")
     private boolean parkIt;
+    @JsonProperty("ParkOutSide")
     private boolean parkOutSide;
     @JsonProperty("NHTSAActionNumber")
     private String nhtsaActionNumber;
@@ -34,7 +35,6 @@ public class Recall {
         return this.component;
     }
 
-
     @Override
     public String toString() {
         return "Recall Details:\n\t" +
@@ -45,3 +45,4 @@ public class Recall {
                 "\n\tNotes: " + this.notes;
     }
 }
+
