@@ -1,5 +1,4 @@
 package edu.kau.fcit.cpit252;
-package edu.kau.fcit.cpit252;
 
 import java.util.ArrayList;
 import java.util.List;
